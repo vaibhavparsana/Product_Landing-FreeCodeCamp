@@ -1,0 +1,211 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body id="main">
+
+    <div class="logo-menu">
+        <header id="header">
+            <div class="disc">
+
+                <header>
+                    <img id="header-img" class="logo-image" src="bg.png" alt="logo">
+                    <h1>Blank Receipt</h1>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </header>
+
+            </div>
+
+            <div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="#home" target="_blank">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link" href="#about" target="_blank" class="dropdownbtn">About</a>
+                            <div class="dropdown-content">
+                                <a href="">Vision</a>
+                                <a href="">Mision</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link" href="#service" target="_blank" class="dropdownbtn">Service</a>
+                            <div class="dropdown-content">
+
+                                <a href="">Resopnsive Web Design Certificate</a>
+                                <a href="">JavaScript Algorithms and Data Structure Certification</a>
+                                <a href="">Front End Libraries Certification</a>
+                                <a href="">Data Visulization Certification</a>
+                                <a href="">APIs and Microservices Certification</a>
+                                <a href="">Information Security and Quality Assurance Certification</a>
+                                <a href="">Coding Interview Prep</a>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact" target="_blank">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section id="home">
+        <div class="contain">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="bg-image.png">
+                    <!--<div class="text">Caption Text</div>-->
+                </div>
+                <div class="slides">
+                    <img src="download.png">
+                    <!--<div class="text">Caption Text</div>-->
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="line-hr">
+    <section id="service">
+        <div class="service-content">
+            <h2 style="text-align:center">Service</h2>
+            <div class="container-service">
+                <div class="column grid-1">
+                    <img class="demo cursor" src="bg-image.png" style="width:100%">
+                    <a class="service-content-link" href="">Resopnsive Web Design Certificate</a>
+                </div>
+                <div class="column grid-2">
+                    <img class="demo cursor" src="bg-image.png" style="width:100%">
+                    <a class="service-content-link" href="">JavaScript Algorithms and Data Structure Certification</a>
+                </div>
+                <div class="column grid-3">
+                    <img class="demo cursor" src="bg-image.png" style="width:100%">
+                    <a class="service-content-link" href="">Front End Libraries Certification</a>
+
+                </div>
+                <div class="column grid-4">
+                    <img class="demo cursor" src="bg-image.png" style="width:100%">
+                    <a class="service-content-link" href="">Data Visulization Certification</a>
+
+                </div>
+                <div class="column grid-5">
+                    <img class="demo cursor" src="bg-image.png" style="width:100%">
+                    <a class="service-content-link" href="">APIs and Microservices Certification</a>
+
+                </div>
+                <div class="column grid-6">
+                    <img class="demo cursor" src="bg-image.png" style="width:100%">
+                    <a class="service-content-link" href="">Information Security and Quality Assurance Certification</a>
+
+                </div>
+                <div class="column grid-7">
+                    <img class="demo cursor" src="bg-image.png" style="width:100%">
+                    <a class="service-content-link" href="">Coding Interview Prep</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="line-hr-2">
+    <section id="about">
+        <div class="video-email">
+            <div class="video-input">
+                <video id="video" controls>
+            <source src="../Video/Page3-video.mp4" type="video/mp4">
+        </video>
+            </div>
+            <div class="email-input">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <h4>Inquiry</h4>
+                    <input id="email" type="email" name="email" placeholder="Enter your email address">
+                    <br>
+                    <input id="submit" type="submit" value="Submit"></input>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+
+        <div class="contact-content">
+
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Help Centre</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Manage Account</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Email Preferences</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
